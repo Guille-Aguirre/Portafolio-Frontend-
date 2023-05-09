@@ -32,8 +32,8 @@
  }
 /*Hero inferior*/
 .hero-inferior-imagen {
-    width: 75%;
+    width: 80%;
     min-width: 320px;
     max-width: 1000px;
-    /*margin: 20px;*/
+    margin: 20px;
  }

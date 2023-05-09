@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LogoApComponent } from './components/logo-ap/logo-ap.component';
 import { HeroComponent } from './Components/hero/hero.component';
+import { BodyComponent } from './components/body/body.component';
+import { ProyectsComponent } from './components/proyects/proyects.component';
+import { ArticulosComponent } from './components/articulos/articulos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     LogoApComponent,
-    HeroComponent
+    HeroComponent,
+    BodyComponent,
+    ProyectsComponent,
+    ArticulosComponent
   ],
   imports: [
     BrowserModule,
