@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LogoApComponent } from './components/logo-ap/logo-ap.component';
 import { HeroComponent } from './Components/hero/hero.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 import { BodyComponent } from './components/body/body.component';
 import { ProyectsComponent } from './components/proyects/proyects.component';
 import { ArticulosComponent } from './components/articulos/articulos.component';
 import { TestimonyComponent } from './components/testimony/testimony.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
+
 
 @NgModule({
   declarations: [
@@ -28,8 +30,9 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-  ],
+    AppRoutingModule,
+    NgCircleProgressModule.forRoot({})
+  ],ng
   providers: [],
   bootstrap: [AppComponent]
 })
