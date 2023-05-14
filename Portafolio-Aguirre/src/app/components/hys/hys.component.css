@@ -1,3 +1,4 @@
+/*Hard skill*/
 .row{
    background-color:  #1b1b32;
     padding: 20px;
@@ -8,3 +9,14 @@
     color: ghostwhite;
 
 }
+/*******************************/
+/*Sof Eskill*/
+.softskill{
+    padding:20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    transition: all 0,2 ease-in;
+ }
