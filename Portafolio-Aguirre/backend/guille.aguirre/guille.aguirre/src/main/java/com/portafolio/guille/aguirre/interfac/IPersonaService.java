@@ -16,6 +16,8 @@ public interface IPersonaService {
     
     //Buscamos una persona por ID
     public Persona findPersona (Long id);
+
+    public void savePersona(Persona persona);
     
     
 }
