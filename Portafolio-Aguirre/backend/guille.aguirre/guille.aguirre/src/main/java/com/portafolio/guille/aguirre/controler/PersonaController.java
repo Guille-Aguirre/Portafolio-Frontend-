@@ -34,8 +34,20 @@ public class PersonaController {
           return "La persona fue eliminada correctamente";
     }
     
+    //URL:PUERTO/personas/editar/4/nombre & apellido img&
     @PutMapping("/personas/editar/{id}")
        public Persona editPersona(@PathVariable Long id,
-               @RequestParam("nombre"))
+               @RequestParam("nombre") string nuevoNombre,
+               @RequestParam("apellido") string nuevoApellido,
+               @RequestParam("img") string nuevoImg){
+           Persona persona=ipersonaService.findPersona(id);
+           
+           persona.setNombre(nuevoNombre);
+           persona.setApellido(nuevoApellido);
+           persona.setImg(nuevoImg);
+           
+           ipersonaService.savePersona(persona);
+           return persona;         
+        }
 }
  
